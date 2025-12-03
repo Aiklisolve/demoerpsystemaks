@@ -43,7 +43,7 @@ export function Navbar({ onMenuClick }: NavbarProps) {
   const handleLogout = async () => {
     try {
       // Call logout which will clear all session data and redirect
-      await logout();
+      // await logout();
       // The logout function in useAuth already handles redirect,
       // but we can also use navigate as a backup
       navigate('/login', { replace: true });
